@@ -1,0 +1,82 @@
+/* Reset default margin and padding */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the header */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Search bar alignment */
+.search-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the input field */
+input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Style for the search button */
+button {
+    padding: 8px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Main section layout */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling for the forecast boxes */
+.forecast-boxes {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px; /* To add some space between the boxes */
+    margin-bottom: 20px;
+}
+
+/* Style for each individual forecast box */
+.forecast-box {
+    width: 100px;
+    height: 150px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/* Detailed forecast display */
+.detailed-forecast {
+    display: none;
+    width: 60%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling for the search history section */
+.search-history {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+/* Style for error container */
+.error-container {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
