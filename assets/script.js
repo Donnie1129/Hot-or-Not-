@@ -1,3 +1,4 @@
+// My name is Donnie
 var apiKey = "7c504c0ebf5b7576339364b166d18539";
 var geocodingApiKey = "7c504c0ebf5b7576339364b166d18539";
 var apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=${apiKey}`;
@@ -27,7 +28,8 @@ async function getWeatherData(city, state, country) {
                 if (weatherResponse.ok) {
                     const weatherData = await weatherResponse.json();
                     console.log('Weather Data:', weatherData);
-                    // Process and display weather data
+                    const dailyForecasts = parseWeatherData(weatherData);
+                    displayForecast(dailyForecasts);
                 } else {
                     console.error('Error in retrieving weather data:', weatherResponse.status);
                     // Handle weather data retrieval error
