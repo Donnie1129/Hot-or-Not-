@@ -1,5 +1,9 @@
 # 06 Server-Side APIs: Weather Dashboard
 
+This is my submition for Project 6, I have created a website that allows you to enter the name of a city, and the abbreviation of a state and will give you the weather for that location. Upon adding a city the location is saved so that it can be accessed later. When selecting a city it
+is important to ensure that you use correct spelling and enter the city first, then a comma, then the state abbreviation. Example (Austin,TX). Once entered correctly the weather information will be given for the city that day. This includes the temp, humidity, and the wind speed for that
+day and will also provide the information for the next several days.
+
 ## Your Task
 
 Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.

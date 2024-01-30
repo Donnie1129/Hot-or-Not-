@@ -10,33 +10,46 @@
     <header>
         <h1>Weather Dashboard</h1>
         <form id="city-search-form">
-            <input type="text" id="cityInput" placeholder="Enter a city">
+            <input type="text" id="cityInput" placeholder="City, St.">
             <button type="submit">Search</button>
         </form>
+        <button id="clear-history-button">Clear Search History</button>
     </header>
     <main class="main">
         <div class="forecast-boxes">
-            <div class="forecast-box" onclick="showDetails(1)">
-                <!-- Content for Day 1 -->
+            <div class="forecast-box">
+                <div class="dt_txt"></div>
+                <div class="temp"></div>
+                <div class="humidity"></div>
+                <div class="speed"></div>
             </div>
-            <div class="forecast-box" onclick="showDetails(2)">
-                <!-- Content for Day 2 -->
+            <div class="forecast-box">
+                <div class="dt_txt"></div>
+                <div class="temp"></div>
+                <div class="humidity"></div>
+                <div class="speed"></div>
             </div>
-            <div class="forecast-box" onclick="showDetails(3)">
-                <!-- Content for Day 3 -->
+            <div class="forecast-box">
+                <div class="dt_txt"></div>
+                <div class="temp"></div>
+                <div class="humidity"></div>
+                <div class="speed"></div>
             </div>
-            <div class="forecast-box" onclick="showDetails(4)">
-                <!-- Content for Day 4 -->
+            <div class="forecast-box">
+                <div class="dt_txt"></div>
+                <div class="temp"></div>
+                <div class="humidity"></div>
+                <div class="speed"></div>
             </div>
-            <div class="forecast-box" onclick="showDetails(5)">
-                <!-- Content for Day 5 -->
+            <div class="forecast-box">
+                <div class="dt_txt"></div>
+                <div class="temp"></div>
+                <div class="humidity"></div>
+                <div class="speed"></div>
             </div>
-        </div>
-        <div class="detailed-forecast">
-            <!-- Hidden detailed content for each day -->
         </div>
     </main>
-    <section class="search-history">
+    <section id="search-history">
         <!-- Content for search history -->
     </section>
     <div class="error-container"></div>
